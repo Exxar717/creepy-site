@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .side {
+        flex: 25%;
+        background-color: $crPrColor;
+        padding: $crPadd;
+    }
+    
+    .main {
+        margin-left: 25%;
+        flex: 50%;
+        background-color: $crPrColor;
+        padding: $crPadd;
+        border: 2px solid $crBorColor;
+        border-radius: 12px;
+    }
+}

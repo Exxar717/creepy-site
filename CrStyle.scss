@@ -1,0 +1,59 @@
+@import 'Variables';
+@import 'CrNavBar';
+@import 'CrContainer';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $crFontBase;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: $crPrColor;
+    color: white;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+}
+
+@media screen and (max-width: 1500px) {
+    .row .side img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+    .row .main {
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .row .side img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row .main {
+        margin-left: 15%;
+        margin-right: 0px;
+    }
+}
